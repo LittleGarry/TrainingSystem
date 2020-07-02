@@ -1,4 +1,7 @@
 <div>
-  <h1>Register</h1>
-  <auth-form></auth-form>
+  <auth-form (submitted)="registerSubmit($event)">
+    <h1>Register</h1>
+    <button type="submit">Create account</button>
+    <a routerLink="/auth/login">Already have an account?</a>
+  </auth-form>
 </div>
