@@ -11,7 +11,13 @@ import { AppComponent } from "./containers/app/app.component";
 import { AppNavComponent } from "./components/app-nav/app-nav.component";
 import { AppHeaderComponent } from "./components/app-header/app-header.component";
 
-const ROUTES: Routes = [];
+const ROUTES: Routes = [
+  {
+    path: "",
+    pathMatch: "full",
+    redirectTo: "/schedule",
+  },
+];
 
 @NgModule({
   declarations: [AppComponent, AppNavComponent, AppHeaderComponent],
